@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google AI Studio 汉化脚本(船仓完美版)
 // @namespace    https://github.com/izscc
-// @version      3.7.2
+// @version      3.7.3
 // @description  对 Google AI Studio 网站界面进行完美汉化，方便中国用户使用。已补齐 FAQ、付费 API key 关联弹层、模型选择器、历史对话操作区及更多新版 UI 的漏翻内容。
 // @author       zscc.in
 // @match        https://aistudio.google.com/*
@@ -1894,7 +1894,30 @@
         "Gemini 3.1 Flash TTS: Powerful, low-latency speech generation. Enjoy natural outputs, steerable prompts, and new expressive audio tags for precise narration control.": "Gemini 3.1 Flash TTS：强大、低延迟的语音生成。可获得自然输出、可控提示词，以及用于精确旁白控制的新表现力音频标签。",
         "Our most cost-efficient video generation model, designed for rapid iteration and building high-volume applications.": "我们最具成本效益的视频生成模型，专为快速迭代和构建高容量应用而设计。",
         "A Mixture-of-Experts model that activates only 4B parameters per inference, delivering high-performance reasoning with a fraction of the memory cost — ideal for cost-efficient, high-throughput server deployments.": "一种混合专家模型，每次推理仅激活 4B 参数，以极低内存成本提供高性能推理，非常适合高性价比、高吞吐的服务器部署。",
-        "Google DeepMind's flagship open-weight dense model, purpose-built for maximum quality in data center environments with a 256K context window and advanced long-context architecture.": "Google DeepMind 的旗舰开放权重稠密模型，专为数据中心环境中的最高质量而打造，具备 256K 上下文窗口和先进的长上下文架构。"
+        "Google DeepMind's flagship open-weight dense model, purpose-built for maximum quality in data center environments with a 256K context window and advanced long-context architecture.": "Google DeepMind 的旗舰开放权重稠密模型，专为数据中心环境中的最高质量而打造，具备 256K 上下文窗口和先进的长上下文架构。",
+        "Turn text into natural-sounding speech...": "将文字转换为自然语音...",
+        "Quick templates": "快速模板",
+        "The Everyday Assistant": "日常助理",
+        "A helpful and professional personal assistant.": "一位乐于助人且专业的个人助理。",
+        "The Guarded NPC": "谨慎的 NPC",
+        "Creates multi-character dialogue in a fantasy setting.": "在奇幻场景中创建多角色对话。",
+        "The Energetic Co-Host": "活力搭档主持人",
+        "Podcast style conversation.": "播客风格对话。",
+        "The Master Storyteller": "故事大师",
+        "Crafts storytelling narration.": "创作故事叙述旁白。",
+        "The Ad Voiceover": "广告旁白",
+        "A smooth, premium commercial voice.": "顺滑、高级的商业广告声音。",
+        "The Training Guide": "培训讲师",
+        "A clear and authoritative corporate trainer.": "清晰且权威的企业培训师。",
+        "The Game Show Host": "游戏节目主持人",
+        "A vibrant and theatrical host.": "一位充满活力、富有舞台感的主持人。",
+        "The Patient Teacher": "耐心老师",
+        "A patient and encouraging language teacher.": "一位耐心且鼓励学生的语言老师。",
+        "Gemini 3.1 Flash TTS Preview": "Gemini 3.1 Flash TTS 预览版",
+        "Speaker settings": "发言人设置",
+        "Toggle audio playback": "切换音频播放",
+        "Model settings": "模型设置",
+        "Expand or collapse model settings": "展开或折叠模型设置"
     });
 
     const regexReplacements = [

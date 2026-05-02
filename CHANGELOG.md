@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.7.3 - 2026-05-02
+
+- 补齐 `generate-speech` / Gemini TTS 页面可见漏翻：页面主标题、快速模板、8 个语音模板标题与描述、模型卡片标题、Speaker settings 等。
+- 按用户要求改用已运行的主 Chrome 窗口检查页面，不再使用临时 Chrome profile 调试该页面。
+
 ## 3.7.2 - 2026-05-02
 
 - 补齐模型探索首页卡片页漏翻：Explore Google models、Code and Chat、Speech and Music、实时卡片描述等。
