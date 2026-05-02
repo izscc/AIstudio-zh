@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google AI Studio 汉化脚本(船仓完美版)
 // @namespace    https://github.com/izscc
-// @version      3.7.1
+// @version      3.7.2
 // @description  对 Google AI Studio 网站界面进行完美汉化，方便中国用户使用。已补齐 FAQ、付费 API key 关联弹层、模型选择器、历史对话操作区及更多新版 UI 的漏翻内容。
 // @author       zscc.in
 // @match        https://aistudio.google.com/*
@@ -1872,7 +1872,29 @@
         "A balanced choice for general purpose use and solid quality": "通用场景与稳定质量之间的均衡选择",
         "(Recommended) Maximizes reasoning depth": "（推荐）最大化推理深度",
         "to Library 管理": "到资料库管理",
-        "到 Library 管理": "到资料库管理"
+        "到 Library 管理": "到资料库管理",
+        "Explore Google models": "探索 Google 模型",
+        "Test out our most advanced and newest models.": "测试我们最先进、最新的模型。",
+        "Code and Chat": "代码与聊天",
+        "Build chatbots, agents, and code with Gemini 3.": "使用 Gemini 3 构建聊天机器人、代理并编写代码。",
+        "Speech and Music": "语音与音乐",
+        "Real-time voice and video with Live API.": "使用 Live API 进行实时语音和视频互动。",
+        "Featured": "精选",
+        "Image generation": "图像生成",
+        "Video generation": "视频生成",
+        "Real-time": "实时",
+        "Explore our text to speech and music generation models.": "探索我们的文字转语音与音乐生成模型。",
+        "Start building": "开始创作",
+        "Close panel": "关闭面板",
+        "Model carousel": "模型轮播",
+        "Star model": "收藏模型",
+        "Unstar model": "取消收藏模型",
+        "Release date": "发布日期",
+        "This model uses Gemini 3.1 Pro and Gemini 3 Flash pricing. Developers may see both items on their bill.": "此模型使用 Gemini 3.1 Pro 和 Gemini 3 Flash 的定价。开发者可能会在账单中看到这两项。",
+        "Gemini 3.1 Flash TTS: Powerful, low-latency speech generation. Enjoy natural outputs, steerable prompts, and new expressive audio tags for precise narration control.": "Gemini 3.1 Flash TTS：强大、低延迟的语音生成。可获得自然输出、可控提示词，以及用于精确旁白控制的新表现力音频标签。",
+        "Our most cost-efficient video generation model, designed for rapid iteration and building high-volume applications.": "我们最具成本效益的视频生成模型，专为快速迭代和构建高容量应用而设计。",
+        "A Mixture-of-Experts model that activates only 4B parameters per inference, delivering high-performance reasoning with a fraction of the memory cost — ideal for cost-efficient, high-throughput server deployments.": "一种混合专家模型，每次推理仅激活 4B 参数，以极低内存成本提供高性能推理，非常适合高性价比、高吞吐的服务器部署。",
+        "Google DeepMind's flagship open-weight dense model, purpose-built for maximum quality in data center environments with a 256K context window and advanced long-context architecture.": "Google DeepMind 的旗舰开放权重稠密模型，专为数据中心环境中的最高质量而打造，具备 256K 上下文窗口和先进的长上下文架构。"
     });
 
     const regexReplacements = [
@@ -1969,6 +1991,12 @@
         { regex: /^Google Account: (.+)$/i, replacement: "Google 账户：$1" },
         { regex: /^Manage (.+)$/i, replacement: "管理 $1" },
         { regex: /^Link an (.+)$/i, replacement: "关联 $1" },
+        { regex: /^Release date: (.+)$/i, replacement: (_, dateText) => `发布日期: ${translateEnglishDateFragments(dateText)}` },
+        { regex: /^Image \(\*Output per image\) • Output: (\$[0-9.]+)$/i, replacement: "图像 (*每张图像输出) • 输出: $1" },
+        { regex: /^Video \(\*Output per video\) • Output: (\$[0-9.]+)$/i, replacement: "视频 (*每个视频输出) • 输出: $1" },
+        { regex: /^Video \(\*Output per video (720p|1080p)\) • Output: (\$[0-9.]+)$/i, replacement: "视频 (*每个 $1 视频输出) • 输出: $2" },
+        { regex: /^Song generation \(\*Output per song\) • Output: (\$[0-9.]+\/req)$/i, replacement: "歌曲生成 (*每首歌输出) • 输出: $1" },
+        { regex: /^Image\/video • Input: (\$[0-9.]+)$/i, replacement: "图像/视频 • 输入: $1" },
         { regex: /^Selected (.+)$/i, replacement: "已选择 $1" }
     ];
 
