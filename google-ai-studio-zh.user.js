@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google AI Studio 汉化脚本(船仓完美版)
 // @namespace    https://github.com/izscc
-// @version      3.7.3
+// @version      3.7.4
 // @description  对 Google AI Studio 网站界面进行完美汉化，方便中国用户使用。已补齐 FAQ、付费 API key 关联弹层、模型选择器、历史对话操作区及更多新版 UI 的漏翻内容。
 // @author       zscc.in
 // @match        https://aistudio.google.com/*
@@ -1917,8 +1917,35 @@
         "Speaker settings": "发言人设置",
         "Toggle audio playback": "切换音频播放",
         "Model settings": "模型设置",
-        "Expand or collapse model settings": "展开或折叠模型设置"
+        "Expand or collapse model settings": "展开或折叠模型设置",
+        "Scene": "场景",
+        "Sample Context": "示例上下文",
+        "Speech block": "语音片段",
+        "Speech block text": "语音片段文本",
+        "Add speech block": "添加语音片段",
+        "Music player": "音乐播放器",
+        "Play": "播放",
+        "Seek audio position": "调整音频播放位置",
+        "Speaker 1 - Aoede": "发言者 1 - Aoede(伊达)",
+        "Speaker settings": "发言者设置",
+        "Open voice settings": "打开语音设置",
+        "voice settings": "语音设置",
+        "Text": "文本",
+        "Composer": "组合器",
+        "e.g. A bustling street at night...": "例如：夜晚熙攘的街道...",
+        "e.g. Previous speaker just finished a long story...": "例如：上一位发言者刚讲完一个很长的故事...",
+        "[amused] That's a great idea! [laughs] (Type '[' for tags)": "[愉快] 这是个很棒的想法！[笑声]（输入 '[' 可添加标签）",
+        "A quiet, professional remote workspace.": "一个安静、专业的远程办公空间。",
+        "Steady, efficient, and unhurried. Tone is empathetic, crisp, and reassuring.": "稳定、高效、不慌不忙。语气富有同理心，清晰且令人安心。"
     });
+
+
+
+    const defaultValueTranslations = new Map([
+        ["A quiet, professional remote workspace.", "一个安静、专业的远程办公空间。"],
+        ["Steady, efficient, and unhurried. Tone is empathetic, crisp, and reassuring.", "稳定、高效、不慌不忙。语气富有同理心，清晰且令人安心。"],
+        ["Good morning! It’s 68°F and sunny. Traffic is a bit heavy today, so I’d suggest leaving ten minutes early for your 9:00 AM meeting. Regarding your support ticket: I definitely hear your frustration with that billing error. I’ve submitted and confirmed a request for a full refund on your behalf. You should see those funds back in your account within three business days.", "早上好！现在是 68°F，天气晴朗。今天交通有点拥堵，所以建议你为 9:00 的会议提前十分钟出发。关于你的支持工单：我完全理解你对账单错误的沮丧。我已经代表你提交并确认了全额退款申请。你应该会在三个工作日内看到款项退回到账户。"]
+    ]);
 
     const regexReplacements = [
         // --- 修复价格显示汉化 (动态价格匹配) ---
@@ -2025,6 +2052,15 @@
 
     function applySpecialElementTranslations(node) {
         if (!(node instanceof Element)) return;
+
+        if ((node.matches('textarea, input') && typeof node.value === 'string')) {
+            const currentValue = node.value.trim();
+            const translatedValue = defaultValueTranslations.get(currentValue);
+            if (translatedValue && node.value !== translatedValue) {
+                node.value = translatedValue;
+                node.dispatchEvent(new Event('input', { bubbles: true }));
+            }
+        }
 
         if (node.matches('.v3-token-count-value')) {
             const text = (node.textContent || '').replace(/\s+/g, ' ').trim();
