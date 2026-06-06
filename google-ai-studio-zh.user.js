@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google AI Studio 汉化脚本(船仓完美版)
 // @namespace    https://github.com/izscc
-// @version      3.7.4
+// @version      3.7.5
 // @description  对 Google AI Studio 网站界面进行完美汉化，方便中国用户使用。已补齐 FAQ、付费 API key 关联弹层、模型选择器、历史对话操作区及更多新版 UI 的漏翻内容。
 // @author       zscc.in
 // @match        https://aistudio.google.com/*
@@ -1765,7 +1765,51 @@
         "Sticky scroll": "粘性滚动",
         "Enable sticky scroll to show the nested code blocks.": "启用粘性滚动以显示嵌套的代码块。",
         "Render indentation guides": "渲染缩进参考线",
-        "Render indentation guides for each line of code.": "为每行代码渲染缩进参考线。"
+        "Render indentation guides for each line of code.": "为每行代码渲染缩进参考线。",
+
+        // --- AI Studio 2026年6月新增 UI 元素汉化 ---
+        "Products and apps": "产品和应用",
+
+        // AI 实验室 - 使用代理构建卡片
+        "Antigravity Preview": "Antigravity 预览版",
+        "A general-purpose autonomous agent running in a remote, Google-hosted Linux environment.": "在 Google 托管的远程 Linux 环境中运行的通用自主代理。",
+        "AI Talk Radio": "AI 语音电台",
+        "Transforms a text source into a polished, simulated radio show with hosts, callers, and background music.": "将文本源转化为带有主持人、听众和背景音乐的精致模拟电台节目。",
+        "Customer Support": "客户支持",
+        "Scans a website to build a custom knowledge base and answer support questions using that content.": "扫描网站构建自定义知识库，并使用该内容回答支持问题。",
+        "Data Analyst": "数据分析师",
+        "Delivers interactive business intelligence and data analysis using the Microsoft Northwind dataset.": "使用 Microsoft Northwind 数据集提供交互式商业智能和数据分析。",
+        "Document Processor": "文档处理器",
+        "Reconciles expenses and invoices, verifies vendors, and creates interactive HTML slideshow reports.": "核对费用和发票，验证供应商，并创建交互式 HTML 幻灯片报告。",
+        "Repo Maintainer": "仓库维护者",
+        "Analyzes your codebase to identify issues, answer questions, and generate bug-fixing patches.": "分析你的代码库，识别问题，回答问题，并生成修复补丁。",
+
+        // 工具菜单弹窗
+        "Edit Structured outputs": "编辑结构化输出",
+        "Edit Function calling": "编辑函数调用",
+
+        // 更多操作菜单
+        "Delete prompt": "删除提示词",
+        "Toggle temporary chat": "切换临时对话",
+        "Toggle viewing raw output": "切换原始输出模式",
+
+        // 模型选择器
+        "Antigravity Agent Preview": "Antigravity 代理预览版",
+        "Search for a model or agent": "搜索模型或代理",
+
+        // 模型选择器 - Antigravity 代理详情
+        "This agent uses Gemini 3.5 Flash pricing.": "此代理使用 Gemini 3.5 Flash 的定价。",
+
+        // 模型描述文本
+        "Our most intelligent model for sustained frontier performance in agentic and coding tasks.": "我们最智能的模型，在代理和编码任务中提供持续的前沿性能。",
+
+        // 提示词设置面板
+        "Saved": "已保存",
+        "+ Create new instruction": "+ 创建新指令",
+        "Title": "标题",
+
+        // 对比视图
+        "Get Code": "获取代码"
     };
 
     const longFormTranslations = new Map([
