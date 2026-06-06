@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.7.6 - 2026-05-06
+
+- 补齐左下角"新功能"悬浮弹窗中 3 个新增条目标题与描述：Antigravity Agent Preview、Gemini 3.5 Flash、Gemini 3.1 Flash Lite GA。
+- 补齐代理页面免责声明、环境设置（Environment / Sources / Network 等）区域漏翻。
+- 补齐"构建APP"页面中 Build an Android app、Contacts 等建议按钮文案。
+- 补齐 404 页面（Page not found）及资料库入口文案。
+
 ## 3.7.4 - 2026-05-02
 
 - 深入补齐 `generate-speech` TTS 页面：逐一点击快速模板后出现的场景、示例上下文、语音片段、添加语音片段、播放器、发言者设置、语音设置等界面文案。

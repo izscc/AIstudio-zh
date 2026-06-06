@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google AI Studio 汉化脚本(船仓完美版)
 // @namespace    https://github.com/izscc
-// @version      3.7.5
+// @version      3.7.6
 // @description  对 Google AI Studio 网站界面进行完美汉化，方便中国用户使用。已补齐 FAQ、付费 API key 关联弹层、模型选择器、历史对话操作区及更多新版 UI 的漏翻内容。
 // @author       zscc.in
 // @match        https://aistudio.google.com/*
@@ -1980,7 +1980,35 @@
         "e.g. Previous speaker just finished a long story...": "例如：上一位发言者刚讲完一个很长的故事...",
         "[amused] That's a great idea! [laughs] (Type '[' for tags)": "[愉快] 这是个很棒的想法！[笑声]（输入 '[' 可添加标签）",
         "A quiet, professional remote workspace.": "一个安静、专业的远程办公空间。",
-        "Steady, efficient, and unhurried. Tone is empathetic, crisp, and reassuring.": "稳定、高效、不慌不忙。语气富有同理心，清晰且令人安心。"
+        "Steady, efficient, and unhurried. Tone is empathetic, crisp, and reassuring.": "稳定、高效、不慌不忙。语气富有同理心，清晰且令人安心。",
+
+        // --- v3.7.6 新功能菜单悬浮弹窗及子页面漏翻补全 ---
+        "Antigravity Agent Preview is now available": "Antigravity 代理预览版现已推出",
+        "Try our SOTA general-purpose autonomous agent running in a remote, Google-hosted Linux environment.": "试用我们最先进的通用自主代理，在 Google 托管的远程 Linux 环境中运行。",
+        "Gemini 3.5 Flash is now available": "Gemini 3.5 Flash 现已推出",
+        "Redefining the pareto frontier, delivering near-Pro level intelligence at a fraction of the cost and with unmatched speed.": "重新定义帕累托前沿，以极低成本与无可匹敌的速度提供接近 Pro 级的智能。",
+        "Gemini 3.1 Flash Lite is now GA": "Gemini 3.1 Flash Lite 现已正式发布",
+        "Our most cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing, is now generally available.": "我们性价比最高的模型，针对高吞吐智能体任务、翻译和简单数据处理进行了优化，现已正式发布。",
+        "This agent can execute code, take real actions, and use large number of tokens. You can stop the agent at any time.": "此代理可执行代码、采取实际操作并使用大量 Token。你可以随时停止代理。",
+        "Collapse agent disclaimer": "折叠代理免责声明",
+        "Expand or collapse environment settings": "展开或折叠环境设置",
+        "Environment": "环境",
+        "Each execution spins up an isolated environment where your agent can run code and manage files.": "每次执行都会启动一个隔离环境，代理可在其中运行代码和管理文件。",
+        "Existing": "现有",
+        "Sources": "来源",
+        "Add sources": "添加来源",
+        "Network": "网络",
+        "Add rules": "添加规则",
+        "Page not found": "页面未找到",
+        "Check that the URL was entered correctly and try again": "请检查 URL 是否输入正确，然后重试",
+        "Go to library": "前往资料库",
+        "Build an Android app": "构建 Android 应用",
+        "Contacts": "通讯录",
+        "Google Tasks": "Google Tasks",
+        "Google Chat": "Google Chat",
+        "Google Forms": "Google Forms",
+        "Google Keep": "Google Keep",
+        "Google Meet": "Google Meet"
     });
 
 
